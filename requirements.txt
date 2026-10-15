@@ -1,0 +1,8 @@
+# get_trace.py: HP 8753D over GPIB via xyphro UsbGpib adapter
+# System dependency: libusb (macOS: brew install libusb, Debian/Ubuntu: apt install libusb-1.0-0)
+pyvisa>=1.14
+# 0.8.x times out on multi-packet replies from the xyphro adapter (trace reads)
+pyvisa-py==0.7.2
+pyusb>=1.2
+# only needed for --plot
+matplotlib>=3.5
